@@ -1,2 +1,2 @@
 # DynaLab
-Sito aziendale DynaLab
+Sito aziendale di DynaLab
