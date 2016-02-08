@@ -34,6 +34,15 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
+//MAIL function
+function SendMail() {
+    var support_mail = "prova@gmail.it"; //TODO CHANGE SUPPORT EMAIL
+    var subject = "FlavourBot";
+    window.location.href = "mailto:" + support_mail + "?subject=" + subject;
+}
+
+
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
