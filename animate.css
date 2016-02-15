@@ -466,9 +466,12 @@
   }
 }
 
-.tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
+.tada:hover{
+	-webkit-backface-visibility: visible !important;
+    -ms-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	-webkit-animation-name: tada;
+	animation-name: tada;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
