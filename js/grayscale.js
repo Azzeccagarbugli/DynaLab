@@ -4,6 +4,45 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ //TEAM COMPONENTS DATA
+function LoadTeam() {
+    var workers = [{ name: "Francesco Coppola", role: "Responsabile ricerca e sviluppo", pic: "Homer.png" },
+        { name: "Simone Governatori", role: "Amministratore società", pic: "Homer.png" },
+        { name: "Martina Rossi", role: "Amminstratore società", pic: "Homer.png" },
+        { name: "Andrea Fiorani", role: "Direttore tecnico", pic: "Homer.png" },
+        { name: "Claudia Angeletti", role: "Responsabile commerciale", pic: "Homer.png" },
+        { name: "Riccardo Ercolani", role: "Responsabile amministrativo", pic: "Homer.png" },
+        { name: "Aurora Brega", role: "Responsabile commerciale", pic: "Homer.png" },
+        { name: "Valerio Mariani", role: "Responsabile amministrativo", pic: "Homer.png" },
+        { name: "Filippo Fratini", role: "Direttore tecnico", pic: "Homer.png" },
+        { name: "Lorenzo Farinelli", role: "Developer", pic: "Homer.png" },
+        { name: "Renato Carmenati", role: "Mentore", pic: "Homer.png" },
+        { name: "Leonardo Guerro", role: "Mentore e developer", pic: "Homer.png" },
+		{ name: "Patrizia Sghiatti", role: "Mentore", pic: "Homer.png" },
+		{ name: "Enrico Giacomoni", role: "Mentore e Web Designer", pic: "Homer.png" },		];
+    var carousel = document.getElementById("carousel_content");
+    var team_html = "";
+    for (var k = 0; k < workers.length; k++) {
+        var p_name = carousel.getElementsByTagName("p")[0];
+        var p_role = carousel.getElementsByTagName("p")[1];
+        var picture = carousel.getElementsByTagName("img")[0];
+        p_name.innerHTML = workers[k].name;
+        p_role.innerHTML = workers[k].role;
+        picture.src = "img/" + workers[k].pic;
+        team_html += carousel.innerHTML;
+    }
+    var car = document.getElementById("carousel_content");
+    car.innerHTML = team_html;
+    var first_div = car.getElementsByTagName("div")[0];
+    first_div.className += " active";
+    car.innerHTML = car.innerHTML;
+}
+
+window.onload = function () {
+    $(document).ready(LoadTeam());
+};
+ 
+ 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
