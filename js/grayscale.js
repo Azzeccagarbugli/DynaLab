@@ -7,9 +7,9 @@
  //TEAM COMPONENTS DATA
 function LoadTeam() {
     var workers = [{ name: "Francesco Coppola", role: "Responsabile ricerca e sviluppo", pic: "Homer.png" },
-        { name: "Simone Governatori", role: "Amministratore società", pic: "Homer.png" },
-        { name: "Martina Rossi", role: "Amminstratore società", pic: "Homer.png" },
-        { name: "Andrea Fiorani", role: "Direttore tecnico", pic: "Homer.png" },
+        { name: "Simone Governatori", role: "Amministratore società", pic: "Simone.png" },
+        { name: "Martina Rossi", role: "Amminstratore società", pic: "Martina.png" },
+        { name: "Andrea Fiorani", role: "Direttore tecnico", pic: "Andrea.png" },
         { name: "Claudia Angeletti", role: "Responsabile commerciale", pic: "Homer.png" },
         { name: "Riccardo Ercolani", role: "Responsabile amministrativo", pic: "Homer.png" },
         { name: "Aurora Brega", role: "Responsabile commerciale", pic: "Homer.png" },
